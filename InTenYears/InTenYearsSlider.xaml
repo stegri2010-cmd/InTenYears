@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="InTenYears.InTenYearsSlider"
+             Title="InTenYearsSlider"
+             BackgroundColor="Aqua">
+    <Grid RowDefinitions="*,*" Margin="10">
+        <Label FontSize="45" TextColor="Black" Text="" Grid.Row="0" x:Name="lblResult"/>
+        <VerticalStackLayout Grid.Row="1" VerticalOptions="End">
+            <Label Text="Youre Name"/>
+            <Entry x:Name="entryName"/>
+            <Label Text="Youre age"/>
+            <Grid ColumnDefinitions="*,50">
+                
+                <Slider Grid.Column="0" 
+                       Minimum="0" 
+                       Maximum="300" 
+                       ValueChanged="Slider_ValueChanged" 
+                       DragCompleted="sliderAge_DragCompleted" 
+                       x:Name="sliderAge"/>
+                <Entry Keyboard="Numeric" x:Name="entryAge" Grid.Column="1"/>
+            </Grid>
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>

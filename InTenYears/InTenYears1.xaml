@@ -5,12 +5,12 @@
              Title="InTenYears1"
              BackgroundColor="Aqua">
     <Grid RowDefinitions="*,*" Margin="10">
-        <Label TextColor="Black" Text="yeahyeahyeah" Grid.Row="0" x:Name="lblResult"/>
+        <Label FontSize="45" TextColor="Black" Text="" Grid.Row="0" x:Name="lblResult"/>
         <VerticalStackLayout Grid.Row="1" VerticalOptions="End">
             <Label Text="Youre Name"/>
-            <Entry/>
+            <Entry x:Name="entryName"/>
             <Label Text="Youre age"/>
-            <Entry Keyboard="Numeric"/>
+            <Entry Keyboard="Numeric" x:Name="entryAge"/>
             <Button Clicked="Button_Clicked" Text="Calculate"/>
         </VerticalStackLayout>
     </Grid>
